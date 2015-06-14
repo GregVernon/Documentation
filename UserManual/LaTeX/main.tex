@@ -1,0 +1,45 @@
+\documentclass{book} %Any other document class can be used
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx} %package to use images in the document
+
+%paths to the same images folder relative to the root and the "sections" folders.
+\graphicspath{{images/}{../images/}} 
+
+\usepackage{subfiles}
+
+
+
+
+
+\begin{document}
+
+\frontmatter
+
+\begin{titlepage}
+\begin{figure}[bh]
+\centering
+\includegraphics[width=10cm]{SU2_Logo}
+\end{figure}
+\begin{center}
+\Huge
+SU2 User Manual \\
+Linear Solvers \\
+\today
+\end{center}
+\end{titlepage}
+
+\mainmatter
+\chapter{First chapter}
+
+    \section{About SU2}
+    \subfile{sections/Chapter_1/introduction} %path to tex file
+
+
+\chapter{Linear Solvers}
+
+    \section{Linear Solver Command Structure}
+    \subfile{sections/Chapter_2/Linear_Solver_Command_Structure}
+
+
+\end{document}
