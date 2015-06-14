@@ -1,0 +1,21 @@
+%This file can be compiled by as a standalone document 
+%the preamble will be imported from the main file
+%%
+\documentclass[../main.tex]{subfiles} 
+%../main.tex is the path to the main file
+
+\begin{document} 
+%Everything below this point will appear in the main document
+
+\begin{verbatim}
+
+LINEAR_SOLVER = <string> CG | FGMRES | BCGSTAB | SMOOTHER_JACOBI
+
+LINEAR_SOLVER_PREC = <string> ILU0 | LU_SGS | LINELET | JACOBI
+
+LINEAR_SOLVER_ERROR = <real> 
+
+LINEAR_SOLVER_ITER = <integer>
+
+\end{verbatim}
+\end{document}
